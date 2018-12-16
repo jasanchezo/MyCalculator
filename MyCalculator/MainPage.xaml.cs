@@ -9,6 +9,9 @@ namespace MyCalculator
 {
     public partial class MainPage : ContentPage
     {
+        /**
+         * VARIABLE GLOBALES
+         * */
         int currentState = 1;
         string mathOperator;
         double firstNumber, secondNumber;
@@ -16,6 +19,8 @@ namespace MyCalculator
         public MainPage()
         {
             InitializeComponent();
+            // SE INICIALIZA ASEGURANDO QUE TODOS LOS VALORES SON LIMPIADOS SIENDO INVOCADO INICIALMENTE POR LA MISMA APLICACIÓN Y SIN NINGÚN EVENTO
+            OnClear(this, null);
         }
 
 
